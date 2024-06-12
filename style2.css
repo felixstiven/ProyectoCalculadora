@@ -15,7 +15,7 @@ h1{
 .calculator{
     background-color: rgb(83, 81, 81);
     max-width: 343px;
-    height: 670px;
+    height: 662px;
     margin: auto;
     box-shadow: 0 0 35px #fff;
     border-radius: 35px;
@@ -42,28 +42,46 @@ h1{
     padding-top: 1px;
 }
 .calculator .content-keyboard .keyboard-section{
-    background-color:red;
+    background-color:transparent;
     width: 248px;
     height: 330px;
-    margin-left: 2px;
+    margin: 1px;
+    flex-flow: column;
 
 }
 .calculator .content-keyboard  button{
+    background-color: gray;
     border: 1px solid rgb(211, 84, 84);
-    list-style-type: none;
-    display: inline-block;
     width: 80px;
     height: 80px;
     margin: 1px 0px;
     padding: 0px;
 }
 .calculator .section-btn{
+    width: 80px;
     display: grid;
-    flex-wrap: wrap;
-    
-
-    
+    flex-flow: column;
+    background-color:transparent;
+    margin-left: 253px;
+    margin-top: -331px;
 }
+.calculator .content-keyboard .section-btn button{
+    background-color: rgb(177, 117, 164);
+    border: 1px solid rgb(211, 84, 84);
+    width: 80px;
+    height: 80px;
+    margin: 1px;
+    padding: 0px;
+    }
+
+    .calculator .content-keyboard .section-btn .btn-equal{
+        height: 161px;
+        border-bottom-right-radius: 35px;
+    }
+    .calculator .content-keyboard .keyboard-section .btn-spot{
+        border-bottom-left-radius: 35px;
+    }
+
 
 
 
