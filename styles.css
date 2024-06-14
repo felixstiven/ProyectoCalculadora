@@ -1,146 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
 
-body
-{
-    background-color: rgb(170, 204, 248);
-}
-h1{
-    color: yellowgreen;
-    background-color: black;
-    max-width: 500px;
-    font-family: "Tiny5";
-    font-size: 35px;
-    text-align: center;
-    margin: auto;
-}
-
-.calculator{
-    background-color: rgb(83, 81, 81);
-    max-width: 343px;
-    height: 670px;
-    margin: auto;
-    box-shadow: 0 0 35px #fff;
-    border-radius: 35px;
-}
-
-.calculator .screen{
-    color: white;
-    background-color: rgb(68, 67, 67);
-    max-width: 500px;
-    height: 250px;
-    border-top-left-radius:35px ;
-    border-top-right-radius: 35px;
-    text-align: center;
-
-}
-
-.calculator .content-keyboard{
-    background-color:transparent;
+*{
     margin: 0;
-    max-width: 300px;
-    height: 428px;
-    border-bottom-left-radius: 35px;
-    border-bottom-right-radius: 35px;
-    padding-top: 1px;
-}
-.calculator .content-keyboard .keyboard-section{
-    background-color:transparent;
-    width: 270px;
-    height: 410px;
-
-}
-.calculator .content-keyboard .keyboard-section li{
-    border: 1px solid gray;
-    list-style-type: none;
-    display: inline-block;
-    width: 80px;
-    height: 80px;
-    margin: 1px 0px;
-    padding: 0px;
-}
-.calculator .content-keyboard .keyboard-section .button-main {
-    background-color:transparent;
-    max-width: 290px;
     padding: 0;
-    margin: 0;
-    margin-left: 2px;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
-.calculator .content-keyboard .keyboard-section .button-main button{
+body{
+    min-height: 100vh; 
+    background-color: rgb(170, 204, 248);
+    display: grid;
+    place-items: center;
+}
+.section-calculator{
+    background-color: rgb(94, 91, 91);
+    border-radius: 1.5rem;
+    height: 486px;
+    width: 280px;
+    box-shadow:  0 0 10px #fff;
+}
+.screen{
+    height: 200px;
+    background-color: gray;
+    grid-column: 1/5;
+    padding: 2.5rem;
+    font-size: 2.2rem;
+    text-align: right;
+    border-radius:  1.5rem; 
+    margin: 3px;
+    font-family: monospace;
+    font-weight: 600;
+    box-shadow:  0 0 10px #fff;
+}
+.section-calculator .keyboard{
+    background-color:transparent;
+    color: #fff;
+    max-width: 100%;
+    height: 280px;
+    padding: 1px;
+    margin: 1px;
+    border-radius: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr );
+    gap: 3px;
+}
+.section-calculator .calculator .keyboard .btn{
+    color: #fff;
+    background-color: darkviolet;
+    border: 0;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow:  0 0 5px gray;
+}
+.section-calculator .calculator .keyboard .btn--{
     color: #fff;
     background-color: gray;
-    font-size: 25PX;
-    padding: 0;
-    width: 80px;
-    height: 80px;
+    box-shadow: 0 0 5px darkviolet;
 }
-.calculator .content-keyboard .keyboard-main2{
-    background-color:transparent;
-    display:grid;
-    width: 89px;
-    margin-left: 218px;
-    margin-top: -410px;
-    height: 411px;
-    list-style-type: none;
+.section-calculator .calculator .keyboard #equal{
+    grid-row: span 2;
+    border-bottom-right-radius: 23px;
 }
-.calculator .content-keyboard .keyboard-main2 button{
-    color: #fff;
-    font-size: 40px;
-    background-color: rgba(243, 155, 243, 0.596);
+.section-calculator .calculator .keyboard .btn-point{
+    border-bottom-left-radius: 21px;
 }
 
-
-.calculator .content-keyboard .keyboard-main2 .list-1{
-    border: 1px solid coral;
-    list-style-type: none;
-    display: grid;
-    width: 80px;
-    height: 80px;
-    margin-top: 1px;
-    margin-left: 1px;
-
+.section-calculator .calculator .keyboard .btn--:hover{
+    background-color:darkviolet ;
+    box-shadow: #fff;
+}
+.section-calculator .calculator .keyboard .btn--:hover{
+    background-color:darkviolet ;
+    box-shadow: #fff;
 }
 
-.calculator .content-keyboard .keyboard-main2 .list-2{
-    border: 1px solid coral;
-    list-style-type: none;
-    display: grid;
-    width: 80px;
-    height: 80px;
-    margin-top: 2px;
-    margin-left: 1px;
-    padding: 0;
-
+.section-calculator .calculator .keyboard .btn--1:hover{
+    background-color: gray;
 }
-
-.calculator .content-keyboard .keyboard-main2 .list-3{
-    border: 1px solid coral;
-    list-style-type: none;
-    display: grid;
-    width: 80px;
-    height: 80px;
-    margin-top: 2px;
-    margin-left: 1px;
-
-}
-.calculator .content-keyboard .keyboard-main2 .list-4{
-    border: 1px solid coral;
-    list-style-type: none;
-    display: grid;
-    width: 80px;
-    height: 164px;
-    margin-top: 2px;
-    margin-left: 1px;
-    border-bottom-right-radius: 35px;
-}
-.calculator .content-keyboard .keyboard-main2 .btn-4{
-    border-bottom-right-radius: 35px;
-}
-.calculator .content-keyboard .keyboard-section .btn_main{
-    border-bottom-left-radius: 35px;
-}
-
-.calculator li:hover{
-    box-shadow: 0 0 20px #020202;
+.section-calculator .calculator .keyboard button{
+    border-radius: 4px;
 }
 
 
