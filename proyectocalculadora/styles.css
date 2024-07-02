@@ -78,10 +78,6 @@ body{
     background-color:darkviolet ;
     box-shadow: #fff;
 }
-.section-calculator .calculator .keyboard .btn--:hover{
-    background-color:darkviolet ;
-    box-shadow: #fff;
-}
 
 .section-calculator .calculator .keyboard .btn--1:hover{
     background-color: gray;
