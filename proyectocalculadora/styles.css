@@ -11,32 +11,71 @@ body{
     background-color: rgb(170, 204, 248);
     display: grid;
     place-items: center;
+    background-image: url(imagenes/fondo2.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
 }
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
+    width: 350px;
+    height: auto;
+    margin: 35px auto;
+    text-align: justify;
+}
+h1{
+    color: #ffff;
+    font-size:18px;
+    width: 100%;
+    background-color: rgba(13, 172, 220, 0.677);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px 0px;
+    text-transform: uppercase;
+
+}
+p{
+    color: #fff;
+    font-size: 12px;
+    background-color: darkviolet;
+    padding: 2px 3px;
+
+}
+
 .section-calculator{
+    display: flex;
     background-color: rgb(94, 91, 91);
     border-radius: 1.5rem;
-    height: 486px;
+    height: auto;
     width: 280px;
     box-shadow:  0 0 10px #fff;
 }
+.calculator{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: auto;
+}
+
 .screen{
     color: #fff;
-    height: 200px;
-    background-color: rgb(18, 43, 95);
+    font-size: 25px;
+    height: 150px;
+    background-color: rgba(13, 172, 220, 0.677);
     grid-column: 1/5;
     padding: 2.5rem;
-    text-align: right;
+    display: flex;
+    align-items: end;
+    justify-content:right;
     border-radius:  1.5rem; 
-    margin: 3px;
+    margin: 4px 3px;
     box-shadow:  0 0 10px #fff;
-}
-.section-calculator .calculator .screen p{
-    color: #fff;
-    font-size: 2.2rem;
-    font-family: monospace;
-    font-weight: 600;
-    margin-right: 0;
-    margin-top: 95px;
+    word-break: break-all;
 }
 .section-calculator .keyboard{
     background-color:transparent;
