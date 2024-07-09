@@ -30,9 +30,13 @@ botones.forEach(boton => {
             return;
         }
 
-        if (screen.textContent=== "0" || screen.textContent === "Error!" ){
+        if (screen.textContent=== "0" || screen.textContent === "Error!" || screen.textContent === "Error! por caracteres" ){
             screen.textContent= botonApretado;
-        } else{
+        } 
+        else if( screen.textContent.length === 20 ){
+            screen.textContent = "Error! por caracteres";
+        }
+        else{
             screen.textContent += botonApretado;
         }
     })
